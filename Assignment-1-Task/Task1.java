@@ -9,22 +9,20 @@ public class FindMaximum {
       }
       if (num3 > max) {
          max = num3;
-      } else {
-        System.out.print("Something went Wrong !");
-      }
+      } 
       return max;
    }
 
    public static void main(String[] args) {
-      Scanner sc = new Scanner(System.in);
+      Scanner userInput = new Scanner(System.in);
       System.out.print("Enter the first number: ");
-      int num1 = sc.nextInt();
+      int num1 = userInput.nextInt();
       System.out.print("Enter the second number: ");
-      int num2 = sc.nextInt();
+      int num2 = userInput.nextInt();
       System.out.print("Enter the third number: ");
-      int num3 = sc.nextInt();
-      sc.close();
-      int max = takenNumbers(num1, num2, num3);
-      System.out.println("The largest number is: " + max);
+      int num3 = userInput.nextInt();
+      userInput.close();
+      int result = takenNumbers(num1, num2, num3);
+      System.out.println("The largest number is: " + result);
    }
 }
