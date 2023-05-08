@@ -16,11 +16,19 @@ class MultidimensionalArray {
         
         
         // specific value print 
-        arr[0][0] = 1
-        arr[0][1] = 2
-        arr[1][0] = 4
-        arr[1][1] = 4
+          System.out.println(a[0][0]); // 1
+          System.out.println(a[0][1]); // 2
+          System.out.println(a[1][0]); // 4
+          System.out.println(a[1][1]); // 4
 
+          a[1][1] = 9;
+            
+            
+        // Change Element Values
+          System.out.println(a[1][1]); // Outputs 9 instead of 4
+        
+        
+        
         
     }
 }
